@@ -4,10 +4,4 @@ services:
     env: python
     plan: free
     autoDeploy: true
-    buildCommand: ""
     startCommand: python youtube_bot.py
-    envVars:
-      - key: TELEGRAM_BOT_TOKEN
-        sync: false
-      - key: YOUTUBE_API_KEY
-        sync: false

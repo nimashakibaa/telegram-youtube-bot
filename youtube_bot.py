@@ -100,9 +100,6 @@ async def list_channels(update, context):
 
     await update.message.reply_text(msg)
 
-
-
-
 async def activate_channels(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not context.args:
         await update.message.reply_text("لطفا شماره کانال‌هایی که می‌خواهید فعال شوند را وارد کنید. مثال:\n/activate 1 3 5")
@@ -188,7 +185,5 @@ async def main():
     await app.run_polling()
 
 if __name__ == "__main__":
-    import nest_asyncio
     import asyncio
-    nest_asyncio.apply()
     asyncio.run(main())
